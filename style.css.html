@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.png">
+    <title>Spotify-Web player:Music for Everyone</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main"> 
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity:1 !important;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option">
+                        <img src="./library_icon.png" alt="lib" style="width:20px; height:20px; margin-right:15px;">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus" style="margin-right:15px;"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <div class="box-p1">Create your first playlist</div>
+                        <div class="box-p2">It's easy,we'll help you</div>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box" id="box2">
+                        <div class="box-p1">Let's find some podcasts to follow</div>
+                        <div class="box-p2">We'll keep you updated on new episodes</div>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main-content -->
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./backward_icon.png" alt="">
+                    <img src="./forward_icon.png" alt="" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <div><button class="badge hide" id="but" style="height: 35px;">Explore Premium</button></div>
+                    <div><button class="badge dark-badge" id="but"><i class="fa-regular fa-circle-down" style="margin-right: 7px; font-size: 15px;"></i>Install App</button></div>
+                    <div><i class="fa-regular fa-user" style="font-size: 20px;"></i></div>
+                </div>
+
+            </div>
+        <!-- card-conatainer -->
+            <h2>Recently Played</h2>
+            <div class="card-conatainer">
+                <div class="card">
+                    <img src="./jhol.png" alt="">
+                    <p class="card-title">Jhol</p>
+                    <p class="card-info">Maanu,Annural Khalid</p>
+                </div>
+            </div>
+        <!-- card-con-end -->
+            <h2>Trending now near you</h2>
+            <div class="card-conatainer">
+                <div class="card">
+                    <img src="./card2img.jpeg" alt="">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-info">Darshan Raval</p>
+                </div>
+                <div class="card">
+                    <img src="./card3img.jpeg" alt="">
+                    <p class="card-title">Mere Paas Tum Ho</p>
+                    <p class="card-info">Rahat Fateh Ali Khan</p>
+                </div>
+                <div class="card">
+                    <img src="./blue eyes.png" alt="">
+                    <p class="card-title">Blue Eyes</p>
+                    <p class="card-info">Yo Yo honey Singh</p>
+                </div>
+                <div class="card">
+                    <img src="./card1img.jpeg" alt="">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates...</p>
+                </div>
+                <div class="card">
+                    <img src="./card5img.jpeg" alt="">
+                    <p class="card-title">Top songs Global</p>
+                    <p class="card-info">Your Weekly Update...</p>
+                </div>
+            </div>
+            <h2>Recommended for today</h2>
+            <div class="card-conatainer">
+                <div class="card">
+                    <img src="./pal pal.png" alt="">
+                    <p class="card-title">Pal Pal</p>
+                    <p class="card-info">Afusic,AliSoomro Music</p>
+                </div>
+                <div class="card">
+                    <img src="./afsos.png" alt="">
+                    <p class="card-title">Afsos</p>
+                    <p class="card-info">Anuv Jain,AP Dhillon</p>
+                </div>
+                <div class="card">
+                    <img src="./safar.png" alt="">
+                    <p class="card-title">Safar</p>
+                    <p class="card-info">Bayaan</p>
+                </div>
+                <div class="card">
+                    <img src="./my terrible mind.png" alt="">
+                    <p class="card-title">My Terrible Mind</p>
+                    <p class="card-info">Talha Anjum,Umair</p>
+                </div>
+                <div class="card">
+                    <img src="./Excuses.png" alt="">
+                    <p class="card-title">Excuses</p>
+                    <p class="card-info">AP Dhillon</p>
+                </div>
+            </div>
+            <h2>Popular albums and singles</h2>
+            <div class="card-conatainer">
+                <div class="card">
+                    <img src="./a.png" alt="">
+                    <p class="card-title">The Arjit Singh Collection</p>
+                </div>
+                <div class="card">
+                    <img src="./b.png" alt="">
+                    <p class="card-title">The most streamed artists of 2024</p>
+                    <!-- <p class="card-info"></p> -->
+                </div>
+                <div class="card">
+                    <img src="./c.png" alt="">
+                    <p class="card-title">The most streamed artists of 2024</p>
+                    <!-- <p class="card-info">Your daily updates of the most played tracks..</p> -->
+                </div>
+                <div class="card">
+                    <img src="./d.png" alt="">
+                    <p class="card-title">late night long drives.</p>
+                    <!-- <p class="card-info">Your daily updates of the most played tracks..</p> -->
+                </div>
+                <div class="card">
+                    <img src="./e.png" alt="">
+                    <p class="card-title">Home to the Desi pop Bops.</p>
+                    <!-- <p class="card-info">Your daily updates of the most played tracks..</p> -->
+                </div>
+            </div>
+            <h2>Popular Artists</h2>
+            <div class="card-conatainer">
+                <div class="card" style="background-color: #121212 !important;">
+                    <img src="./arjit s.jpeg" alt="" style="border-radius: 50% !important;">
+                    <p class="card-title">Arjit Singh</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="card" style="background-color: #121212 !important;">
+                    <img src="./atif aslam.jpeg" alt="" style="border-radius: 50% !important;">
+                    <p class="card-title">Atif Aslam</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                 <div class="card" style="background-color: #121212 !important;">
+                    <img src="./shubh.jpeg" alt="" style="border-radius: 50% !important;">
+                    <p class="card-title">Shubh</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="card" style="background-color: #121212 !important;">
+                    <img src="./karan aujla.jpeg" alt="" style="border-radius: 50% !important;">
+                    <p class="card-title">Karan Aujla</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="card" style="background-color: #121212 !important;">
+                    <img src="./ap dhillon.jpeg" alt="" style="border-radius: 50% !important;">
+                    <p class="card-title">AP Dhillon</p>
+                    <p class="card-info">Artist</p>
+                </div>
+            </div>
+            <h2>Popular radio</h2>
+            <div class="card-conatainer">
+                <div class="card" style="height: 230px !important;">
+                    <img src="./diljit.png" alt="">
+                    <p class="card-info" style="margin-top: 8px !important;">With AP Dhillon,Abdul Hannan,Afusic and more</p>
+                </div>
+                <div class="card" style="height: 230px !important;">
+                    <img src="./arjit.png" alt="">
+                    <p class="card-info" style="margin-top: 8px !important;">With Sachin-Jigar,Jeet Gunnguli,Atif Aslam...</p>
+                </div>
+                <div class="card" style="height: 230px !important;">
+                    <img src="./sidhu.png" alt="">
+                    <p class="card-info" style="margin-top: 8px !important;">With Shubh,AP Dhillon,Sharry Mann...</p>
+                </div>
+                <div class="card" style="height: 230px !important;">
+                    <img src="./talha anjum.png" alt="">
+                    <p class="card-info" style="margin-top: 8px !important;">With Young Stunners,Umair...</p>
+                </div>
+                <div class="card" style="height: 230px !important;">
+                    <img src="./kar.png" alt="">
+                    <p class="card-info" style="margin-top: 8px !important;">With Shubh,DIVINE,AP Dhillon and more</p>
+                </div>
+            </div>
+            <br>
+              
+            <div class="footer">
+                <div class="line">
+                    <footer class="bg-black text-light pt-5 pb-3">
+                      <div class="container">   
+                       <div class="row">
+                       
+                        <!-- Company -->
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="text-white">Company</h6>
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="text-muted text-decoration-none d-block py-1">About</a></li>
+                            <li><a href="#" class="text-muted text-decoration-none d-block py-1">Jobs</a></li>
+                            <li><a href="#" class="text-muted text-decoration-none d-block py-1">For the Record</a></li>
+                          </ul>
+                        </div>
+
+                        <!-- Communities -->
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="text-white">Communities</h6>
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="text-muted text-decoration-none d-block py-1">For Artists</a></li>
+                            <li><a href="#" class="text-muted text-decoration-none d-block py-1">Developers</a></li>
+                            <li><a href="#" class="text-muted text-decoration-none d-block py-1">Advertising</a></li>
+                            <li><a href="#" class="text-muted text-decoration-none d-block py-1">Investors</a></li>
+                            <li><a href="#" class="text-muted text-decoration-none d-block py-1">Vendors</a></li>
+                          </ul>
+                        </div>
+
+                        <!-- Useful Links -->
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="text-white">Useful links</h6>
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="text-muted text-decoration-none d-block py-1">Support</a></li>
+                            <li><a href="#" class="text-muted text-decoration-none d-block py-1">Free Mobile App</a></li>
+                            <li><a href="#" class="text-muted text-decoration-none d-block py-1">Popular by Country</a></li>
+                            <li><a href="#" class="text-muted text-decoration-none d-block py-1">Import your music</a></li>
+                          </ul>
+                        </div>
+
+                        <!-- Spotify Plans -->
+                        <div class="col-6 col-md-3 mb-4">
+                         <h6 class="text-white">Spotify Plans</h6>
+                         <ul class="list-unstyled">
+                           <li><a href="#" class="text-muted text-decoration-none d-block py-1">Premium Individual</a></li>
+                           <li><a href="#" class="text-muted text-decoration-none d-block py-1">Premium Duo</a></li>
+                           <li><a href="#" class="text-muted text-decoration-none d-block py-1">Premium Family</a></li>
+                           <li><a href="#" class="text-muted text-decoration-none d-block py-1">Premium Student</a></li>
+                           <li><a href="#" class="text-muted text-decoration-none d-block py-1">Spotify Free</a></li>
+                         </ul>
+                        </div>
+                       </div>
+
+                       <!-- Social Icons -->
+                       <div class="d-flex gap-3 mb-3">
+                         <a href="#" class="d-inline-block bg-dark rounded-circle p-2">
+                           <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" alt="Instagram">
+                         </a>
+                         <a href="#" class="d-inline-block bg-dark rounded-circle p-2">
+                           <img src="https://img.icons8.com/ios-filled/20/ffffff/twitter.png" alt="Twitter">
+                         </a>
+                         <a href="#" class="d-inline-block bg-dark rounded-circle p-2">
+                           <img src="https://img.icons8.com/ios-filled/20/ffffff/facebook-new.png" alt="Facebook">
+                         </a>
+                       </div>
+
+                       <!-- Copyright -->
+                       <hr class="border-secondary">
+                       <p class="text-muted small">&copy; 2025 Spotify AB</p>
+                       <br><br><br>
+                      </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="player-left" style="width: 23%;">
+                <img src="./jhol.png" alt="" style="width: 72px; height: 72px;">
+                <div class="player-left-sec2" style="display: flex; gap: 40px;">
+                   <div style="padding: 5px 0 10px 0";>
+                     <h2 style="font-weight: 600px !important; font-size: 17px !important; margin-bottom: 2px !important;">Jhol</h2>
+                     <p style="font-size: 14px; padding-left: 16px; padding-top: 0px; padding-bottom: 20px;">Annural Khalid</p>
+                   </div>
+                   <div style="display: flex; align-items: center;  font-size: 24px; padding-left: 5px; gap: 5px;">
+                     <i class="fa-regular fa-heart"></i>
+                     <i class="fa-regular fa-rectangle-list"></i>
+                   </div>
+                </div>
+            </div>
+            <div class="player-mid" style="width: 55%;">
+                <div class="player-controls">
+                    <img src="./player_icon1.png" alt="" class="player-control-icon">
+                    <img src="./player_icon2.png" alt="" class="player-control-icon">
+                    <img src="./player_icon3.png" alt="" class="player-control-icon" style="height: 1.7rem !important;">
+                    <img src="./player_icon4.png" alt="" class="player-control-icon">
+                    <img src="./player_icon5.png" alt="" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="cur-time">00:34</span>
+                    <input type="range" min="0" max="100"  class="progress-bar">
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+            <div class="player-right" style=" display: flex;">
+                <div class="music-icons">
+                  <i class="fa-regular fa-circle-play"></i>
+                  <i class="fa-solid fa-music"></i>
+                  <i class="fa-solid fa-align-right"></i>
+                  <i class="fa-regular fa-clone"></i>
+                  <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div style="display: flex; align-items: center; ">
+                    <input type="range" min="0" max="100" value="50" class="progress-bar" style="width: 70%; margin-right: 10px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
